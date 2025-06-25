@@ -7,3 +7,4 @@ The .py files are in the Data generation.zip file for generating permittivity ar
 Distributed Feedback (DFB) system permittivity value initialization files are used for optimization, which are also generated from .py main file. Optimization is performed in order to maximize gain/absorption of the materials.
 
 Please check APP_TUTORIAL.pdf for the UI nuances before using the application.
+
