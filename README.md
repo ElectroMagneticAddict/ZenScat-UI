@@ -12,8 +12,14 @@ Please check APP_TUTORIAL.pdf for the UI nuances before using the application.
 # Getting started
 The ZenScat is in possession of five UI classes - 
 1. Opening app class
-2. Casual app class
-3. Casual import app class
-4. Optimization (Casual + Import) app class
-5. 2D Finite Difference Frequency Domain application class
+2. Casual app class (2D RCWA)
+3. Casual import app class (2D RCWA)
+4. Optimization (Casual + Import) app class (2D RCWA)
+5. Field computation application class (2D FDFD)
 
+These classes involve functions.structs used for 2D RCWA:
+parameters.m, grid.m, device.m, Launch_RCWA_S (S matrix method), Launch_RCWA_T (T matrix method).
+
+Use PLAY_SCRIPT.m for modifying/testing functions for RCWA.
+
+If .mex file does not work, it is mainly because it is compiled in the local environment. Then it is adviced to recompile it via PLAY_SCRIPT.m via the use of Matlab Coder. The compilation is performed in C++ language, the project files are dubbed as .prj.
