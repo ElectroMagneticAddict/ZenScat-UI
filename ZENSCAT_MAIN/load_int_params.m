@@ -1,0 +1,34 @@
+function self = load_int_params(app)
+    %% Interface smoothing
+    smooth = load("smooth.mat");
+    self.smooth = smooth.Value(1);
+    %% trapezium
+    self.trapz_w_bot = app.w_botumEditField.Value;
+    self.trapz_w_top = app.w_topumEditField.Value;
+    %% Supergauss
+    self.supergauss_sigma = app.FWHMumEditField.Value/2.355;
+    self.supergauss_m     = app.OrderEditField.Value;
+    %% Triangle
+    value1 = app.Leftsidew2umEditField.Value;
+    value2 = app.Rightsidew3umEditField.Value;
+    value3 = app.preleftw1umEditField.Value;
+
+    self.triangle_w1 = value1;
+    self.triangle_w2 = value2;
+    self.triangle_w3 = value3;
+
+    %% 2D rectangle
+    self.rec_2D_wx       = 0;
+    self.rec_2D_wy       = 0;
+    self.rec_rot_angle   = 0;
+    %% 2D ellipse
+    self.ax                  = app.ellipsexwidthEditField.Value;
+    self.ay                  = app.ellipseywidthEditField.Value;
+    self.ellipse_rot_angle   = app.ellipserotangledegEditField.Value;
+    self.radius_star_ellipse = app.rEditField.Value;
+    % %% Rec Bragg (rectangle on Bragg grating)
+    % Rec_Bragg = load('REC_BRAGG.mat');
+    % for i = 1:5
+    %     self.Rec_Bragg(i) = Rec_Bragg.Value(i);
+    % end
+end

@@ -1,0 +1,2 @@
+This application is open for use and utilizes 2D RCWA for diffraction efficiency calculations.
+It also involves 2D Finite Difference Frequency Domain method for field visuals, due to its faster computational speeds on CPU. 
