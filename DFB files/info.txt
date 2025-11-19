@@ -1,0 +1,1 @@
+This file contains Python script for generating necessary arrays for matlab's Optimization or Import apps.
