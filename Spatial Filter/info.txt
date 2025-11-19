@@ -1,0 +1,3 @@
+Used to simulate rectangular spatial filter:
+
+https://opg.optica.org/oe/fulltext.cfm?uri=oe-23-18-23428
