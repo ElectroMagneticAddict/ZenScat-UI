@@ -1,0 +1,3 @@
+Used to simulate LIDT enhanced coupler:
+
+https://opg.optica.org/oe/fulltext.cfm?uri=oe-29-2-2669
